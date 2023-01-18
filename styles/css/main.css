@@ -132,3 +132,25 @@ img {
     color: var(--black);
     opacity: 0.3;
 }
+
+/*----------------------------------slider--------------------------------------------------*/
+/* .slider-list {}
+
+.slider-list__item {}
+ */
+.slider-list__lead b {
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.2;
+
+    color: var(--black);
+}
+
+/* .slider-list__text {} */
+
+.slider-list__more-btn {}
+
+.slider-list__img {}
