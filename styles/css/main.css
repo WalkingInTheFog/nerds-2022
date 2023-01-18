@@ -100,3 +100,31 @@ img {
     background-color: var(--white);
 
 }
+
+
+/**---------------------------------header-----------------------------------------------*/
+/* .main-nav-list {
+}
+.main-nav-list__item {
+} */
+
+.main-nav-list__link {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    text-decoration: none;
+
+    color: var(--black);
+
+}
+
+.main-nav-list__link:hover,
+.main-nav-list__link:focus {
+    color: var(--red);
+}
+
+.main-nav-list__link:active {
+    color: var(--black);
+    opacity: 0.3;
+}
