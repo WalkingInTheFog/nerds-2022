@@ -108,7 +108,8 @@ img {
 .main-nav-list__item {
 } */
 
-.main-nav-list__link {
+.main-nav-list__link,
+.user-basket-link {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -120,11 +121,14 @@ img {
 }
 
 .main-nav-list__link:hover,
-.main-nav-list__link:focus {
+.main-nav-list__link:focus,
+.user-basket-link:hover,
+.user-basket-link:focus {
     color: var(--red);
 }
 
-.main-nav-list__link:active {
+.main-nav-list__link:active,
+.user-basket-link:active {
     color: var(--black);
     opacity: 0.3;
 }
