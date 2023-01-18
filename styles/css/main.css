@@ -101,6 +101,11 @@ img {
 
 }
 
+.main-slider,
+.main-header {
+    background-color: var(--gray);
+}
+
 
 /**---------------------------------header-----------------------------------------------*/
 /* .main-nav-list {
