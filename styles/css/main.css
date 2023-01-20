@@ -379,3 +379,10 @@ img {
     line-height: 1.177;
     color: var(--black);
 }
+
+.pop-up__form-item label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.125;
+    color: var(--black);
+}
