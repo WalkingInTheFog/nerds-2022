@@ -292,3 +292,43 @@ img {
 .clients__link:active img {
     opacity: 0.1;
 }
+
+/*------------------------footer-------------------------------------------*/
+
+.main-footer__top-line {
+
+    min-height: 416px;
+}
+
+.main-footer__contact {
+
+    background-color: var(--white);
+}
+
+.contacts__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.666;
+    text-transform: uppercase;
+
+    color: var(--balck);
+
+}
+
+.contacts__text {
+    font-weight: 400;
+
+    line-height: 1.125;
+    font-style: normal;
+    color: var(--gray-600);
+
+}
+
+.contacts__tel-link {
+    font-weight: 400;
+
+    line-height: 1.125;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--gray-600);
+}
