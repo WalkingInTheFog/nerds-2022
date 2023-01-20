@@ -188,4 +188,7 @@ img {
     opacity: 0.3;
 }
 
-/* .slider-list__img {} */
+.slider-list__img {
+    max-width: 760px;
+    max-height: 431px;
+}
