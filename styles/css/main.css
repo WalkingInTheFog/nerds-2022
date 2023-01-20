@@ -154,7 +154,9 @@ img {
     color: var(--black);
 }
 
-/* .slider-list__text {} */
+.slider-list__text {
+    color: var(--black-200);
+}
 
 .slider-list__more-btn {
 
