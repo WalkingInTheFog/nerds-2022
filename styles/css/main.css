@@ -49,6 +49,7 @@ img {
 
 }
 
+/*-----------------buttons---------------------------*/
 .btn {
 
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -80,6 +81,35 @@ img {
 
 .btn:active span {
     opacity: 0.3;
+}
+
+/*-----------------buttons-modificators--------------------------*/
+
+.btn--green {
+    background-color: var(--green);
+}
+
+.btn--green:hover,
+.btn--green:focus {
+    background-color: var(--green-500);
+}
+
+.btn--green:active {
+    background-color: var(--green-600);
+}
+
+
+.btn--yellow {
+    background-color: var(--yellow);
+}
+
+.btn--yellow:hover,
+.btn--yellow:focus {
+    background-color: var(--yellow-500);
+}
+
+.btn--yellow:active {
+    background-color: var(--yellow-600);
 }
 
 
