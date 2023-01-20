@@ -166,7 +166,8 @@ img {
 }
 
 .main-slider,
-.main-header {
+.main-header,
+.lead-title {
     background-color: var(--gray);
 }
 
@@ -200,6 +201,18 @@ img {
 .user-basket-link:active {
     color: var(--black);
     opacity: 0.3;
+}
+
+
+/*-----------------------------lead-title-----------------------------------------*/
+
+.lead-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--black);
 }
 
 /*----------------------------------slider--------------------------------------------------*/
