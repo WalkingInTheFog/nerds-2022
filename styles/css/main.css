@@ -355,3 +355,18 @@ img {
 
     opacity: 0.3;
 }
+
+.lets-friends b {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: var(--black);
+}
+
+.lets-friends span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: var(--gray-700);
+
+}
