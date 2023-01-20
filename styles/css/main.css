@@ -332,3 +332,26 @@ img {
     text-decoration: none;
     color: var(--gray-600);
 }
+
+/*--------social-buttons-------*/
+
+.social-list__link {
+    display: block;
+    text-decoration: none;
+    background-color: var(--gray-300);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+    background-color: var(--red-500);
+}
+
+.social-list__link:active {
+    background-color: var(--red-600);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-list__link:active .social-list__link-img {
+
+    opacity: 0.3;
+}
