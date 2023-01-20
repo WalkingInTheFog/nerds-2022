@@ -370,3 +370,12 @@ img {
     color: var(--gray-700);
 
 }
+
+/*---------------------------pop-up------------------------------------------------*/
+
+.pop-up__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.177;
+    color: var(--black);
+}
