@@ -145,8 +145,8 @@ img {
  */
 .slider-list__lead b {
 
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-style: normal;
+
+
     font-weight: 500;
     font-size: 55px;
     line-height: 1.2;
@@ -156,6 +156,36 @@ img {
 
 /* .slider-list__text {} */
 
-.slider-list__more-btn {}
+.slider-list__more-btn {
 
-.slider-list__img {}
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--white);
+    background-color: var(--red);
+
+}
+
+.slider-list__more-btn:hover,
+.slider-list__more-btn:focus {
+
+    background-color: var(--red-500);
+
+}
+
+
+.slider-list__more-btn:active {
+    background-color: var(--red-600);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.slider-list__more-btn:active span {
+    opacity: 0.3;
+}
+
+/* .slider-list__img {} */
