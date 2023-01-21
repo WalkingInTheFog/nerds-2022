@@ -417,3 +417,27 @@ img {
     line-height: 1.375;
     text-transform: uppercase;
 }
+
+.catalog-filters fieldset,
+.range-field {
+    border: none;
+}
+
+.range-field {
+
+    background-color: var(--gray);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    color: var(--black-200);
+
+}
+
+.range-field::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    color: var(--black-200);
+}
