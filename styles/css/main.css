@@ -113,6 +113,25 @@ img {
 }
 
 
+.btn--gray {
+    background-color: var(--gray);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.125;
+
+    color: var(--black);
+}
+
+.btn--gray:hover,
+.btn--gray:focus {
+    background-color: var(--gray-470);
+}
+
+.btn--gray:active {
+    background-color: var(--gray-490);
+}
+
+
 .display-none {
     display: none;
 }
