@@ -441,3 +441,10 @@ img {
     text-align: center;
     color: var(--black-200);
 }
+
+
+.filter-label {
+    color: var(--black-200);
+    font-size: 16px;
+    line-height: 1.25;
+}
