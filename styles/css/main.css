@@ -399,3 +399,14 @@ img {
     line-height: 1.125;
     color: var(--black);
 }
+
+/*-----------------------catalog-filters-------------------------------*/
+
+.filter-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.666;
+    text-transform: uppercase;
+
+    color: var(--black);
+}
