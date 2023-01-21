@@ -467,3 +467,31 @@ img {
     font-size: 16px;
     line-height: 1.25;
 }
+
+/*----------------sort results---------------------*/
+
+.sort-list__link {
+
+
+    font-size: 14px;
+    line-height: 1.285;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.sort-list__link:hover,
+.sort-list__link:focus {
+    opacity: 0.6;
+}
+
+.sort-list__link:active {
+    opacity: 1;
+}
+
+.sort-list__link--active {
+    opacity: 1;
+}
