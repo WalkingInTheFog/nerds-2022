@@ -192,10 +192,7 @@ img {
 
 
 /**---------------------------------header-----------------------------------------------*/
-/* .main-nav-list {
-}
-.main-nav-list__item {
-} */
+
 
 .main-nav-list__link,
 .user-basket-link {
@@ -235,10 +232,7 @@ img {
 }
 
 /*----------------------------------slider--------------------------------------------------*/
-/* .slider-list {}
 
-.slider-list__item {}
- */
 .slider-list__lead b {
 
 
@@ -542,13 +536,9 @@ img {
     color: var(--gray-600);
 }
 
-/* .catalog-list__cart-price {} */
+
 
 /*------------------------pagination-----------------------------*/
-
-
-
-.pagination-list__item {}
 
 .pagination-list__link {
 
