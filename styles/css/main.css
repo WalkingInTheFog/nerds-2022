@@ -193,6 +193,15 @@ img {
 
 /**---------------------------------header-----------------------------------------------*/
 
+.main-logo:hover,
+.main-logo:focus {
+    opacity: 0.8;
+}
+
+.main-logo:active {
+    opacity: 0.3;
+}
+
 
 .main-nav-list__link,
 .user-basket-link {
