@@ -543,3 +543,41 @@ img {
 }
 
 /* .catalog-list__cart-price {} */
+
+/*------------------------pagination-----------------------------*/
+
+
+
+.pagination-list__item {}
+
+.pagination-list__link {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.125;
+    color: var(--black);
+    text-decoration: none;
+    text-align: center;
+
+    background-color: var(--gray);
+}
+
+.pagination-list__link:hover,
+.pagination-list__link:focus {
+    background-color: var(--gray-470);
+}
+
+.pagination-list__link:active {
+    background-color: var(--gray-490);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-list__link:active span {
+    opacity: 0.3;
+}
+
+
+.pagination-list__link--active {
+    background-color: var(--white);
+    border: 3px solid var(---gray-370);
+}
