@@ -576,7 +576,6 @@ img {
     opacity: 0.3;
 }
 
-
 .pagination-list__link--active {
     background-color: var(--white);
     border: 3px solid var(---gray-370);
