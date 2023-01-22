@@ -400,7 +400,13 @@
 
   <div class="pop-up">
 
-    <h2>Напишите нам</h2>
+    <button type="button">
+
+      <span class="visually-hidden">закрыть окно</span>
+
+    </button>
+
+    <h2 class="pop-up__title">Напишите нам</h2>
 
     <form class="pop-up__form" action="https://echo.htmlacademy.ru/" method="post" name="user-msg-form">
 
@@ -420,7 +426,7 @@
 
       </p>
 
-      <p>
+      <p class="pop-up__form-item">
 
         <label for="user-msg-form__msg">Текст письма:</label>
 
@@ -429,7 +435,9 @@
 
       </p>
 
-      <button type="submit">Отправить</button>
+      <button class="btn" type="submit">
+        <span>Отправить</span>
+      </button>
 
     </form>
 
