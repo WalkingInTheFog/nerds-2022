@@ -206,6 +206,12 @@ img {
 
 /**---------------------------------header-----------------------------------------------*/
 
+.main-logo {
+    display: block;
+    width: 160px;
+    height: 66px;
+}
+
 .main-logo:hover,
 .main-logo:focus {
     opacity: 0.8;
@@ -215,6 +221,18 @@ img {
     opacity: 0.3;
 }
 
+.main-nav {
+
+    display: grid;
+    grid-template-columns: 200px 1fr 160px;
+
+}
+
+
+
+.main-nav-list {
+    align-self: center;
+}
 
 .main-nav-list__link,
 .user-basket-link {
