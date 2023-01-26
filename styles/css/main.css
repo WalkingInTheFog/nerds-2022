@@ -228,12 +228,6 @@ img {
 
 }
 
-
-
-.main-nav-list {
-    align-self: center;
-}
-
 .main-nav-list__link,
 .user-basket-link {
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -273,10 +267,15 @@ img {
 
 /*----------------------------------slider--------------------------------------------------*/
 
+.main-nav-list {}
+
+.slider-list__item {
+
+    padding-right: 600px;
+
+}
+
 .slider-list__lead b {
-
-
-
     font-weight: 500;
     font-size: 55px;
     line-height: 1.2;
@@ -286,11 +285,6 @@ img {
 
 .slider-list__text {
     color: var(--black-200);
-}
-
-.slider-list__img {
-    max-width: 760px;
-    max-height: 431px;
 }
 
 /*-------------------------------services-------------------------------------------*/
