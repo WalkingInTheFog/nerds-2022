@@ -311,6 +311,13 @@ img {
 
 /*-------------------------about-us-------------------------------------------------------*/
 
+
+.about-company {
+    display: grid;
+    grid-template-columns: 660px 360px;
+    column-gap: 140px;
+}
+
 .about-us__lead {
     font-weight: 500;
     font-size: 45px;
