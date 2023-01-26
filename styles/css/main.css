@@ -318,6 +318,11 @@ img {
     column-gap: 140px;
 }
 
+.clients-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .about-us__lead {
     font-weight: 500;
     font-size: 45px;
