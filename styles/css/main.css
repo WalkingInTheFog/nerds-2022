@@ -318,10 +318,6 @@ img {
     column-gap: 140px;
 }
 
-.clients-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 
 .about-us__lead {
     font-weight: 500;
@@ -359,6 +355,12 @@ img {
 }
 
 /*----------------------clients----------------------------------------*/
+
+.clients-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 
 .clients__link img {
     opacity: 0.2;
