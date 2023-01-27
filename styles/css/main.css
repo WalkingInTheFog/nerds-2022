@@ -388,6 +388,11 @@ img {
     background-color: var(--green-400);
 }
 
+.main-footer__inner {
+    display: grid;
+    grid-template-columns: 319px 1fr;
+}
+
 .main-footer__contact {
 
     background-color: var(--white);
