@@ -263,7 +263,7 @@ img {
 
 .catalog-main {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: 360px 760px;
     column-gap: 40px;
 }
 
