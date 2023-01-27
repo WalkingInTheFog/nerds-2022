@@ -262,8 +262,8 @@ img {
 
 .catalog-main {
     display: grid;
-    grid-template-columns: repeat(3, 358px);
-    column-gap: 42px;
+    grid-template-columns: repeat(3, 360px);
+    column-gap: 40px;
 }
 
 
@@ -601,7 +601,7 @@ img {
 
 .catalog-list {
     display: grid;
-    grid-template-columns: 358px 358px;
+    grid-template-columns: 360px 360px;
     column-gap: 40px;
 }
 
