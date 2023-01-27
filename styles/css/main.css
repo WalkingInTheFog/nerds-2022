@@ -473,6 +473,17 @@ img {
 
 /*---------------------------pop-up------------------------------------------------*/
 
+.pop-up__form {
+
+    display: grid;
+    grid-template-columns: 360px 360px;
+    column-gap: 40px;
+}
+
+.pop-up__form-item--text-area {
+    grid-column: 1/3;
+}
+
 .pop-up__title {
     font-weight: 700;
     font-size: 45px;
