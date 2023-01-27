@@ -572,6 +572,11 @@ img {
 
 /*----------------sort results---------------------*/
 
+
+.catalog__sort {
+    grid-column: 1/-1;
+}
+
 .sort-list__link {
 
 
