@@ -28,6 +28,7 @@
 
     --green-500: #00BC6C;
     --green-600: #00AA62;
+    --green-400: #cfdc8f;
 
     --yellow-500: #EAB534;
     --yellow-600: #E5A722;
@@ -384,6 +385,7 @@ img {
 .main-footer__top-line {
 
     min-height: 416px;
+    background-color: var(--green-400);
 }
 
 .main-footer__contact {
