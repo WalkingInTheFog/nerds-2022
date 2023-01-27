@@ -419,6 +419,13 @@ img {
     color: var(--gray-600);
 }
 
+
+.main-footer__bottom-line {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 140px;
+}
+
 /*--------social-buttons-------*/
 
 .social-list__link {
