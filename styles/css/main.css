@@ -258,10 +258,21 @@ img {
     opacity: 0.3;
 }
 
+/*-----------------------------catalog-main-------------------------------*/
+
+.catalog-main {
+    display: grid;
+    grid-template-columns: repeat(3, 358px);
+    column-gap: 42px;
+}
+
 
 /*-----------------------------lead-title-----------------------------------------*/
 
 .lead-title {
+
+    grid-column: 1/-1;
+
     font-weight: 500;
     font-size: 55px;
     line-height: 1.2;
@@ -272,7 +283,7 @@ img {
 
 /*----------------------------------slider--------------------------------------------------*/
 
-.main-nav-list {}
+
 
 .slider-list__item {
 
@@ -499,6 +510,10 @@ img {
 }
 
 /*-----------------------catalog-filters-------------------------------*/
+
+.catalog-filters {
+    grid-column: 1/2;
+}
 
 .filter-title {
     font-weight: 700;
