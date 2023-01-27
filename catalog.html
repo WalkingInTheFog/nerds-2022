@@ -343,28 +343,40 @@
 
   <footer class="main-footer">
 
-    <div class="main-footer__contact contacts">
+    <div class="main-footer__top-line" style="background-image: url('/images/map.png'); 
+              background-repeat: no-repeat; 
+              background-position: center center;
+              min-height: 416px;
+              ">
 
-      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="main-footer__inner container">
 
-      <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+        <div class="main-footer__contact contacts">
 
-      <address class="contacts__text">
+          <h2 class="visually-hidden">Наши контакты</h2>
 
-        наб. Реки Карповки, <br>
-        5 лит П, Санкт-Петербург
+          <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
 
-        <a class="contacts__tel-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          <address class="contacts__text">
 
-      </address>
+            наб. Реки Карповки, <br>
+            5 лит П, Санкт-Петербург
 
-      <button class="main-footer__contact-btn btn" type="button">
-        <span>Напишите нам</span>
-      </button>
+            <a class="contacts__tel-link" href="tel:+78005558628">+7 800 555-86-28</a>
+
+          </address>
+
+          <button class="main-footer__contact-btn btn" type="button">
+            <span>Напишите нам</span>
+          </button>
+
+        </div>
+
+      </div>
 
     </div>
 
-    <div class="main-footer__bottom-line">
+    <div class="main-footer__bottom-line container">
 
       <ul class="social-list reset-list">
         <li class="social-list__item">
@@ -398,7 +410,7 @@
 
   </footer>
 
-  <div class="pop-up">
+  <div class="pop-up display-none">
 
     <button type="button">
 
@@ -426,7 +438,7 @@
 
       </p>
 
-      <p class="pop-up__form-item">
+      <p class="pop-up__form-item pop-up__form-item--text-area">
 
         <label for="user-msg-form__msg">Текст письма:</label>
 
