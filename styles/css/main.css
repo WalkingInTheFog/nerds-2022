@@ -230,6 +230,7 @@ img {
 
     display: grid;
     grid-template-columns: 200px 1fr 160px;
+    column-gap: 40px;
 
 }
 
