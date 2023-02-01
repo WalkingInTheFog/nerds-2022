@@ -467,11 +467,25 @@ img {
 
 /*----------------------clients----------------------------------------*/
 
-.clients-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.clients {
+    margin-bottom: 79px;
+    border-bottom: 1px solid var(--gray);
 }
 
+.clients-list {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    min-height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.clients-list__item {
+    flex-grow: 1;
+}
 
 .clients__link img {
     opacity: 0.2;
