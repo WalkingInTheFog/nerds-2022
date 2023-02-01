@@ -57,287 +57,294 @@
 
   </header>
 
-  <main class="catalog-main container">
+  <main class="catalog-main">
 
     <h1 class="lead-title">Магазин готовых шаблонов</h1>
 
-    <section class="catalog-filters">
+    <div class="catalog-grid container">
 
-      <h2 class="visually-hidden">Фильтр шаблонов</h2>
+      <section class="catalog-filters">
 
-      <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filters-form">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
 
-        <fieldset>
+        <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="get"
+          name="catalog-filters-form">
 
-          <legend class="filter-title">Стоимость:</legend>
+          <fieldset>
 
-          <div class="range-fiter">
+            <legend class="filter-title">Стоимость:</legend>
 
-            <div class="range-line">
+            <div class="range-fiter">
 
-              <div class="range-pin-min"></div>
+              <div class="range-line">
 
-              <div class="range-pin-max"></div>
+                <div class="range-pin-min"></div>
+
+                <div class="range-pin-max"></div>
+
+              </div>
 
             </div>
 
-          </div>
+            <label class="range-label" for="start-price">От</label>
+            <input class="range-field" type="text" name="start-price" id="start-price" placeholder="0">
 
-          <label class="range-label" for="start-price">От</label>
-          <input class="range-field" type="text" name="start-price" id="start-price" placeholder="0">
+            <label class="range-label" for="end-price">До</label>
+            <input class="range-field" type="text" name="end-price" id="end-price" placeholder="150 000">
 
-          <label class="range-label" for="end-price">До</label>
-          <input class="range-field" type="text" name="end-price" id="end-price" placeholder="150 000">
+          </fieldset>
 
-        </fieldset>
+          <fieldset>
 
-        <fieldset>
+            <legend class="filter-title">Сетка:</legend>
 
-          <legend class="filter-title">Сетка:</legend>
+            <input class="type-filter-radio" type="radio" name="grid" value="adaptive" id="grid-adaptive" checked>
+            <label class="filter-label" for="grid-adaptive">Адаптивная</label>
 
-          <input class="type-filter-radio" type="radio" name="grid" value="adaptive" id="grid-adaptive" checked>
-          <label class="filter-label" for="grid-adaptive">Адаптивная</label>
+            <input class="type-filter-radio" type="radio" name="grid" value="fix" id="grid-fix">
+            <label class="filter-label" for="grid-fix">Фиксированная</label>
 
-          <input class="type-filter-radio" type="radio" name="grid" value="fix" id="grid-fix">
-          <label class="filter-label" for="grid-fix">Фиксированная</label>
+            <input class="type-filter-radio" type="radio" name="grid" value="rubber" id="grid-rubber">
+            <label class="filter-label" for="grid-rubber">Резиновая</label>
 
-          <input class="type-filter-radio" type="radio" name="grid" value="rubber" id="grid-rubber">
-          <label class="filter-label" for="grid-rubber">Резиновая</label>
+          </fieldset>
 
-        </fieldset>
+          <fieldset>
 
-        <fieldset>
+            <legend class="filter-title">Особенности:</legend>
 
-          <legend class="filter-title">Особенности:</legend>
+            <input class="features-filter-input" type="checkbox" name="features-slider" id="features-slider" checked>
+            <label class="filter-label" for="features-slider">Слайдер</label>
 
-          <input class="features-filter-input" type="checkbox" name="features-slider" id="features-slider" checked>
-          <label class="filter-label" for="features-slider">Слайдер</label>
+            <input class="features-filter-input" type="checkbox" name="features-block" id="features-block">
+            <label class="filter-label" for="features-block"> Блок преимуществ</label>
 
-          <input class="features-filter-input" type="checkbox" name="features-block" id="features-block">
-          <label class="filter-label" for="features-block"> Блок преимуществ</label>
+            <input class="features-filter-input" type="checkbox" name="features-news" id="features-news" checked>
+            <label class="filter-label" for="features-news">Новости</label>
 
-          <input class="features-filter-input" type="checkbox" name="features-news" id="features-news" checked>
-          <label class="filter-label" for="features-news">Новости</label>
+            <input class="features-filter-input" type="checkbox" name="features-gallery" id="features-gallery">
+            <label class="filter-label" for="features-gallery">Галерея</label>
 
-          <input class="features-filter-input" type="checkbox" name="features-gallery" id="features-gallery">
-          <label class="filter-label" for="features-gallery">Галерея</label>
+            <input class="features-filter-input" type="checkbox" name="features-basket" id="features-basket">
+            <label class="filter-label" for="features-basket">Корзина</label>
 
-          <input class="features-filter-input" type="checkbox" name="features-basket" id="features-basket">
-          <label class="filter-label" for="features-basket">Корзина</label>
+          </fieldset>
 
-        </fieldset>
+          <button class="btn btn--gray" type="submit">
+            <span> Показать</span>
+          </button>
 
-        <button class="btn btn--gray" type="submit">
-          <span> Показать</span>
-        </button>
+        </form>
 
-      </form>
+      </section>
 
-    </section>
+      <section class="catalog">
 
-    <section class="catalog">
+        <h2 class="visually-hidden">Список шаблонов</h2>
 
-      <h2 class="visually-hidden">Список шаблонов</h2>
+        <div class="catalog__sort">
 
-      <div class="catalog__sort">
+          <h3 class="filter-title">Сортировать:</h3>
 
-        <h3 class="filter-title">Сортировать:</h3>
+          <ul class="sort-list reset-list">
 
-        <ul class="sort-list reset-list">
+            <li class="sort-list__item">
 
-          <li class="sort-list__item">
+              <a class="sort-list__link sort-list__link--active" href="blank.html">По цене</a>
 
-            <a class="sort-list__link sort-list__link--active" href="blank.html">По цене</a>
+            </li>
+
+            <li class="sort-list__item">
+
+              <a class="sort-list__link" href="blank.html"> По типу</a>
+
+            </li>
+
+            <li class="sort-list__item">
+
+              <a class="sort-list__link" href="blank.html">По названию</a>
+
+            </li>
+
+            <li class="sort-list__item">
+
+              <a href="sort-list__link">
+
+                <span class="visually-hidden">от большего к меньшему</span>
+
+                <svg class="sort-list__img" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#000" />
+                </svg>
+
+              </a>
+
+            </li>
+
+            <li class="sort-list__item">
+
+              <a href="sort-list__link">
+
+                <span class="visually-hidden">от меньшего к большему</span>
+
+                <svg class="sort-list__img" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#000" />
+                </svg>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="catalog-list reset-list">
+
+          <li class="catalog-list__item">
+
+            <img class="catalog-list__img" src="images/sedona.png" alt="скриншот главной страницы сайта Седона"
+              width="358" height="578">
+
+            <div class="catalog-list__pop-up">
+
+              <a class="catalog-list__link" href="blank.html">
+                <h3 class="catalog-list__cart-title">Sedona</h3>
+              </a>
+
+              <p class="catalog-list__cart-desc">Информационный сайт для туристов</p>
+
+              <p class="catalog-list__cart-price btn">
+                <span>9 900 ₽</span>
+              </p>
+
+            </div>
 
           </li>
 
-          <li class="sort-list__item">
+          <li class="catalog-list__item">
 
-            <a class="sort-list__link" href="blank.html"> По типу</a>
+            <img class="catalog-list__img" src="images/pink-site.png" alt="скриншот главной страницы сайта pink"
+              width="358" height="578">
 
-          </li>
+            <div class="catalog-list__pop-up">
 
-          <li class="sort-list__item">
+              <a class="catalog-list__link" href="blank.html">
+                <h3 class="catalog-list__cart-title">Pink App</h3>
+              </a>
 
-            <a class="sort-list__link" href="blank.html">По названию</a>
+              <p class="catalog-list__cart-desc">Продуктовый лендинг приложения для iOS и Android</p>
 
-          </li>
+              <p class="catalog-list__cart-price btn">
+                <span>9 900 ₽</span>
+              </p>
 
-          <li class="sort-list__item">
-
-            <a href="sort-list__link">
-
-              <span class="visually-hidden">от большего к меньшему</span>
-
-              <svg class="sort-list__img" width="11" height="10" viewBox="0 0 11 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#000" />
-              </svg>
-
-            </a>
+            </div>
 
           </li>
 
-          <li class="sort-list__item">
+          <li class="catalog-list__item">
 
-            <a href="sort-list__link">
+            <img class="catalog-list__img" src="images/barbershop.png" alt="скриншот главной страницы сайта borodinski"
+              width="358" height="578">
 
-              <span class="visually-hidden">от меньшего к большему</span>
+            <div class="catalog-list__pop-up">
 
-              <svg class="sort-list__img" width="11" height="10" viewBox="0 0 11 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#000" />
-              </svg>
+              <a class="catalog-list__link" href="blank.html">
+                <h3 class="catalog-list__cart-title">Barbershop</h3>
+              </a>
 
-            </a>
+              <p class="catalog-list__cart-desc">Сайт салона красоты.Для мужчин, да.</p>
+
+              <p class="catalog-list__cart-price btn">
+                <span>9 900 ₽</span>
+              </p>
+
+            </div>
 
           </li>
+
+          <li class="catalog-list__item">
+
+            <img class="catalog-list__img" src="images/mishka-site.png" alt="скриншот главной страницы сайта mishka"
+              width="358" height="578">
+
+            <div class="catalog-list__pop-up">
+
+              <a class="catalog-list__link" href="blank.html">
+                <h3 class="catalog-list__cart-title">MISHKA</h3>
+              </a>
+
+              <p class="catalog-list__cart-desc">Интернет-магазин вязаных игрушек</p>
+
+              <p class="catalog-list__cart-price btn">
+                <span>9 900 ₽</span>
+              </p>
+
+            </div>
+
+          </li>
+
+          <li class="catalog-list__item">
+
+            <img class="catalog-list__img" src="images/aplus.png" alt="скриншот главной страницы сайта A Plus"
+              width="358" height="578">
+
+            <div class="catalog-list__pop-up">
+
+              <a class="catalog-list__link" href="blank.html">
+                <h3 class="catalog-list__cart-title">A Plus</h3>
+              </a>
+
+              <p class="catalog-list__cart-desc">Лендинг курсов повышения квалификации</p>
+
+              <p class="catalog-list__cart-price btn">
+                <span>9 900 ₽</span>
+              </p>
+
+            </div>
+
+          </li>
+
+          <li class="catalog-list__item">
+
+            <img class="catalog-list__img" src="images/kvast.png" alt="скриншот главной страницы сайта КВАСТ"
+              width="358" height="578">
+
+            <div class="catalog-list__pop-up">
+
+              <a class="catalog-list__link" href="blank.html">
+                <h3 class="catalog-list__cart-title">КВАСТ</h3>
+              </a>
+
+              <p class="catalog-list__cart-desc">Промо-сайт производителякрафтового кваса</p>
+
+              <p class="catalog-list__cart-price btn">
+                <span>9 900 ₽</span>
+              </p>
+
+            </div>
+
+          </li>
+
 
         </ul>
 
-      </div>
+        <ul class="pagination-list reset-list">
+          <li class="pagination-list__item"><a class="pagination-list__link pagination-list__link--active">
+              <span>1</span>
+            </a></li>
+          <li class="pagination-list__item"><a href="blank.html" class="pagination-list__link"><span>2</span></a></li>
+          <li class="pagination-list__item"><a href="blank.html" class="pagination-list__link"><span>3</span></a></li>
+          <li class="pagination-list__item"><a href="blank.html"
+              class="pagination-list__link"><span>Следующая</span></a>
+          </li>
+        </ul>
 
-      <ul class="catalog-list reset-list">
+      </section>
 
-        <li class="catalog-list__item">
-
-          <img class="catalog-list__img" src="images/sedona.png" alt="скриншот главной страницы сайта Седона"
-            width="358" height="578">
-
-          <div class="catalog-list__pop-up">
-
-            <a class="catalog-list__link" href="blank.html">
-              <h3 class="catalog-list__cart-title">Sedona</h3>
-            </a>
-
-            <p class="catalog-list__cart-desc">Информационный сайт для туристов</p>
-
-            <p class="catalog-list__cart-price btn">
-              <span>9 900 ₽</span>
-            </p>
-
-          </div>
-
-        </li>
-
-        <li class="catalog-list__item">
-
-          <img class="catalog-list__img" src="images/pink-site.png" alt="скриншот главной страницы сайта pink"
-            width="358" height="578">
-
-          <div class="catalog-list__pop-up">
-
-            <a class="catalog-list__link" href="blank.html">
-              <h3 class="catalog-list__cart-title">Pink App</h3>
-            </a>
-
-            <p class="catalog-list__cart-desc">Продуктовый лендинг приложения для iOS и Android</p>
-
-            <p class="catalog-list__cart-price btn">
-              <span>9 900 ₽</span>
-            </p>
-
-          </div>
-
-        </li>
-
-        <li class="catalog-list__item">
-
-          <img class="catalog-list__img" src="images/barbershop.png" alt="скриншот главной страницы сайта borodinski"
-            width="358" height="578">
-
-          <div class="catalog-list__pop-up">
-
-            <a class="catalog-list__link" href="blank.html">
-              <h3 class="catalog-list__cart-title">Barbershop</h3>
-            </a>
-
-            <p class="catalog-list__cart-desc">Сайт салона красоты.Для мужчин, да.</p>
-
-            <p class="catalog-list__cart-price btn">
-              <span>9 900 ₽</span>
-            </p>
-
-          </div>
-
-        </li>
-
-        <li class="catalog-list__item">
-
-          <img class="catalog-list__img" src="images/mishka-site.png" alt="скриншот главной страницы сайта mishka"
-            width="358" height="578">
-
-          <div class="catalog-list__pop-up">
-
-            <a class="catalog-list__link" href="blank.html">
-              <h3 class="catalog-list__cart-title">MISHKA</h3>
-            </a>
-
-            <p class="catalog-list__cart-desc">Интернет-магазин вязаных игрушек</p>
-
-            <p class="catalog-list__cart-price btn">
-              <span>9 900 ₽</span>
-            </p>
-
-          </div>
-
-        </li>
-
-        <li class="catalog-list__item">
-
-          <img class="catalog-list__img" src="images/aplus.png" alt="скриншот главной страницы сайта A Plus" width="358"
-            height="578">
-
-          <div class="catalog-list__pop-up">
-
-            <a class="catalog-list__link" href="blank.html">
-              <h3 class="catalog-list__cart-title">A Plus</h3>
-            </a>
-
-            <p class="catalog-list__cart-desc">Лендинг курсов повышения квалификации</p>
-
-            <p class="catalog-list__cart-price btn">
-              <span>9 900 ₽</span>
-            </p>
-
-          </div>
-
-        </li>
-
-        <li class="catalog-list__item">
-
-          <img class="catalog-list__img" src="images/kvast.png" alt="скриншот главной страницы сайта КВАСТ" width="358"
-            height="578">
-
-          <div class="catalog-list__pop-up">
-
-            <a class="catalog-list__link" href="blank.html">
-              <h3 class="catalog-list__cart-title">КВАСТ</h3>
-            </a>
-
-            <p class="catalog-list__cart-desc">Промо-сайт производителякрафтового кваса</p>
-
-            <p class="catalog-list__cart-price btn">
-              <span>9 900 ₽</span>
-            </p>
-
-          </div>
-
-        </li>
-
-
-      </ul>
-
-      <ul class="pagination-list reset-list">
-        <li class="pagination-list__item"><a class="pagination-list__link pagination-list__link--active"> <span>1</span>
-          </a></li>
-        <li class="pagination-list__item"><a href="blank.html" class="pagination-list__link"><span>2</span></a></li>
-        <li class="pagination-list__item"><a href="blank.html" class="pagination-list__link"><span>3</span></a></li>
-        <li class="pagination-list__item"><a href="blank.html" class="pagination-list__link"><span>Следующая</span></a>
-        </li>
-      </ul>
-
-    </section>
+    </div>
 
   </main>
 
