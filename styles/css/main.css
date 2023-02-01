@@ -251,6 +251,9 @@ img {
     padding-bottom: 20px;
 }
 
+.user-basket {
+    display: flex;
+}
 
 .user-basket-link {
     display: block;
