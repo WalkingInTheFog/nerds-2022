@@ -289,18 +289,20 @@ img {
 
 /*-----------------------------catalog-main-------------------------------*/
 
-.catalog-main {
+.catalog-main {}
+
+.catalog-grid {
     display: grid;
     grid-template-columns: 360px 760px;
     column-gap: 40px;
 }
 
-
 /*-----------------------------lead-title-----------------------------------------*/
 
 .lead-title {
-
-    grid-column: 1/-1;
+    margin: 0;
+    padding-top: 72px;
+    padding-bottom: 108px;
 
     font-weight: 500;
     font-size: 55px;
