@@ -388,11 +388,14 @@ img {
 .about-company {
     display: grid;
     grid-template-columns: 660px 360px;
-    column-gap: 140px;
+    column-gap: 149px;
 }
 
 
 .about-us__lead {
+    margin-top: 34px;
+    margin-bottom: 32px;
+
     font-weight: 500;
     font-size: 45px;
     line-height: 1;
@@ -400,11 +403,15 @@ img {
 }
 
 .about-us__text {
-
+    margin-top: 0;
+    margin-bottom: 40px;
     color: var(--black-200);
 }
 
 .about-us h3 {
+    margin-top: 0;
+    margin-bottom: 23px;
+
     font-weight: 700;
     text-transform: uppercase;
 }
