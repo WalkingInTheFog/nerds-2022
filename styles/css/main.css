@@ -389,6 +389,8 @@ img {
     display: grid;
     grid-template-columns: 650px 375px;
     column-gap: 135px;
+    padding-bottom: 74px;
+    border-bottom: 1px solid var(--gray);
 }
 
 
