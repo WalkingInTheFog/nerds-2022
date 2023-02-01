@@ -564,11 +564,22 @@ img {
 
 /*--------social-buttons-------*/
 
+
+.social-list {
+    display: flex;
+
+    align-items: center;
+    margin-right: -9px;
+}
+
 .social-list__link {
     display: block;
+    width: 77px;
+    margin-right: 9px;
     text-decoration: none;
     background-color: var(--gray-300);
 }
+
 
 .social-list__link:hover,
 .social-list__link:focus {
