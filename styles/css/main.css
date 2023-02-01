@@ -710,6 +710,16 @@ img {
     grid-column: 1/2;
 }
 
+.catalog-filters fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 45px;
+}
+
+.catalog-filters legend {
+    margin-bottom: 15px;
+}
+
 .filter-title {
     font-weight: 700;
     font-size: 18px;
@@ -751,7 +761,14 @@ img {
 }
 
 
+.catalog-filters__item {
+    margin: 0;
+    margin-bottom: 15px;
+}
 
+.catalog-filters__item:last-child {
+    margin-bottom: 0;
+}
 
 .filter-label {
     color: var(--black-200);
