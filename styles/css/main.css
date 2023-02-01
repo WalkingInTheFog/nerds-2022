@@ -599,6 +599,10 @@ img {
     opacity: 0.3;
 }
 
+.lets-friends {
+    margin: 0;
+}
+
 .lets-friends b {
     font-weight: 700;
     font-size: 36px;
