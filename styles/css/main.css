@@ -410,13 +410,27 @@ img {
 
 .about-us h3 {
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 40px;
 
     font-weight: 700;
     text-transform: uppercase;
 }
 
+
+.stats__img {
+    margin-bottom: 37px;
+}
+
+.stats-list {
+    display: flex;
+
+}
+
+
+
 .stats__lead {
+    margin-top: 0;
+    margin-bottom: 31px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--black);
