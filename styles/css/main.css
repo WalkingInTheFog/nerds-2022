@@ -211,6 +211,15 @@ img {
 
 /**---------------------------------header-----------------------------------------------*/
 
+.main-nav {
+
+    display: grid;
+    grid-template-columns: 200px 1fr 160px;
+    column-gap: 40px;
+    padding-top: 50px;
+
+}
+
 .main-logo {
     display: block;
     width: 160px;
@@ -226,12 +235,20 @@ img {
     opacity: 0.3;
 }
 
-.main-nav {
+.main-nav-list {
 
-    display: grid;
-    grid-template-columns: 200px 1fr 160px;
-    column-gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
 
+.main-nav-list__link {
+    display: block;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    padding-bottom: 20px;
 }
 
 .main-nav-list__link,
