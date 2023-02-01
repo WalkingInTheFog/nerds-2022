@@ -613,6 +613,19 @@ img {
 
 /*---------------------------pop-up------------------------------------------------*/
 
+.pop-up {
+    margin: 0 auto;
+    width: 960px;
+    max-width: 960px;
+    padding-top: 63px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 85px;
+
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
 .pop-up__form {
 
     display: grid;
@@ -625,6 +638,9 @@ img {
 }
 
 .pop-up__title {
+    margin: 0;
+    margin-bottom: 37px;
+
     font-weight: 700;
     font-size: 45px;
     line-height: 1.177;
