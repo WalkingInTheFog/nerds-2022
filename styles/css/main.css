@@ -251,6 +251,14 @@ img {
     padding-bottom: 20px;
 }
 
+
+.user-basket-link {
+    display: block;
+    margin-top: auto;
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+
 .main-nav-list__link,
 .user-basket-link {
     font-family: 'Roboto', 'Arial', sans-serif;
