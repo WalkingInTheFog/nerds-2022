@@ -716,11 +716,11 @@ img {
     margin-bottom: 45px;
 }
 
-.catalog-filters legend {
-    margin-bottom: 15px;
-}
 
 .filter-title {
+    margin: 0;
+    margin-bottom: 15px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 1.666;
@@ -782,14 +782,28 @@ img {
 }
 
 /*----------------sort results---------------------*/
-
-
 .catalog__sort {
     grid-column: 1/-1;
+
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.sort-list__link {
+.catalog__sort-title {
+    margin: 0;
 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.666;
+    text-transform: uppercase;
+
+    color: var(--black);
+}
+
+
+
+.sort-list__link {
 
     font-size: 14px;
     line-height: 1.285;
