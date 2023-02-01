@@ -289,8 +289,6 @@ img {
 
 /*-----------------------------catalog-main-------------------------------*/
 
-.catalog-main {}
-
 .catalog-grid {
     display: grid;
     grid-template-columns: 360px 760px;
@@ -301,6 +299,7 @@ img {
 
 .lead-title {
     margin: 0;
+    margin-bottom: 55px;
     padding-top: 72px;
     padding-bottom: 108px;
 
