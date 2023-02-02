@@ -860,19 +860,34 @@ img {
     display: grid;
     grid-template-columns: 360px 360px;
     column-gap: 40px;
+    row-gap: 30px;
 }
 
 /*--------------------product cart---------------------------------*/
 
 .catalog-list__pop-up {
+    padding-top: 26px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 44px;
+
+    text-align: center;
     background-color: var(--gray);
+
 }
 
 .catalog-list__link {
+    display: block;
+    margin: 0;
+
     text-decoration: none;
+
 }
 
 .catalog-list__cart-title {
+    margin: 0;
+    margin-bottom: 12px;
+
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -894,11 +909,18 @@ img {
 
 
 .catalog-list__cart-desc {
+    margin: 0;
+    margin-bottom: 32px;
+
     text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.125;
     color: var(--gray-600);
+}
+
+.catalog-list__cart-price {
+    margin: 0;
 }
 
 
