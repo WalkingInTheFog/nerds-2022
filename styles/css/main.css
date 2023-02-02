@@ -930,8 +930,25 @@ img {
 
 /*------------------------pagination-----------------------------*/
 
-.pagination-list__link {
+.pagination-list {
 
+    display: flex;
+    flex-wrap: wrap;
+
+
+    margin-bottom: 60px;
+}
+
+
+.pagination-list__item {
+    margin-right: 11px;
+}
+
+.pagination-list__item:last-child {
+    margin: 0;
+}
+
+.pagination-list__link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.125;
@@ -941,6 +958,8 @@ img {
 
     background-color: var(--gray);
 }
+
+
 
 .pagination-list__link:hover,
 .pagination-list__link:focus {
