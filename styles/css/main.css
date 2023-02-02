@@ -786,12 +786,14 @@ img {
     grid-column: 1/-1;
 
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
 
 }
 
 .catalog__sort-title {
     margin: 0;
+    margin-right: 266px;
 
     font-weight: 700;
     font-size: 18px;
@@ -802,6 +804,30 @@ img {
 }
 
 
+
+.sort-list {
+    max-width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sort-list__item {
+
+    margin-right: 25px;
+
+}
+
+.sort-list__item--direcion-down {
+    margin-right: 18px;
+    margin-left: 47px;
+}
+
+
+.sort-list__item__last,
+.sort-list__item--direcion:last-child {
+    margin-right: 0;
+}
 
 .sort-list__link {
 
