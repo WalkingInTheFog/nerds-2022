@@ -861,6 +861,9 @@ img {
     grid-template-columns: 360px 360px;
     column-gap: 40px;
     row-gap: 30px;
+
+    margin-bottom: 55px;
+
 }
 
 /*--------------------product cart---------------------------------*/
