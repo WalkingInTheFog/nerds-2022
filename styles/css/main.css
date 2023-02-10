@@ -325,8 +325,8 @@ img {
 
 .catalog-grid {
     display: grid;
-    grid-template-columns: 360px 760px;
-    column-gap: 40px;
+    grid-template-columns: 260px 760px;
+    column-gap: 140px;
 }
 
 /*-----------------------------lead-title-----------------------------------------*/
@@ -885,6 +885,8 @@ img {
 .range-field {
     border: none;
 }
+
+
 
 .range-field {
 
