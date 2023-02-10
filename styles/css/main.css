@@ -498,6 +498,30 @@ img {
     text-transform: uppercase;
 }
 
+.about-us__list {}
+
+.about-us__list li {
+    position: relative;
+    margin-bottom: 35px;
+    padding-left: 37px;
+}
+
+.about-us__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: var(--red);
+}
+
+.about-us__list li:last-child {
+    margin-bottom: 0;
+}
+
 .stats {
     text-align: center;
 }
