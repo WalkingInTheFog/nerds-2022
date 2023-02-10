@@ -722,6 +722,8 @@ img {
 }
 
 .lets-friends b {
+    display: inline-block;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1;
