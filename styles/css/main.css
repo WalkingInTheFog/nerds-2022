@@ -685,13 +685,22 @@ img {
 }
 
 .social-list__link {
-    display: block;
-    width: 77px;
+    display: flex;
+    width: 81px;
+    height: 81px;
     margin-right: 9px;
+    border-radius: 50%;
     text-decoration: none;
     background-color: var(--gray-300);
 }
 
+.social-list__item:last-child .social-list__link {
+    margin-right: 0px;
+}
+
+.social-list__link-img {
+    margin: auto;
+}
 
 .social-list__link:hover,
 .social-list__link:focus {
