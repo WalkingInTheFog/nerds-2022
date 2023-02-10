@@ -373,6 +373,12 @@ img {
     color: var(--black-200);
 }
 
+.slider-list__more-btn {
+
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
 /*-------------------------------services-------------------------------------------*/
 
 .services {
