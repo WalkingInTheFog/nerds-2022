@@ -858,7 +858,7 @@ img {
 .catalog-filters fieldset {
     padding: 0;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 54px;
 }
 
 
@@ -918,9 +918,20 @@ img {
     cursor: pointer;
 }
 
-
+.range-fiter__controls {
+    display: flex;
+    justify-content: space-between;
+}
 
 .range-field {
+
+    display: inline-block;
+    width: 80px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    margin-left: 11px;
 
     background-color: var(--gray);
     font-weight: 400;
