@@ -12,6 +12,7 @@
     --gray-700: #444444;
     --gray-300: #E1E1E1;
     --gray-200: #D7DCDE;
+    --gray-250: #C1C1C1;
     --gray-400: #ABABAB;
     --gray-350: #D7DCDF;
     --gray-650: #4D4D4D;
@@ -348,6 +349,10 @@ img {
     margin-bottom: 80px;
 }
 
+.slider-wrapper {
+    position: relative;
+}
+
 .slider-list__item {
     min-height: 431px;
     padding-top: 80px;
@@ -378,6 +383,43 @@ img {
     padding-left: 54px;
     padding-right: 54px;
 }
+
+
+.main-slider__controls {
+    position: absolute;
+    bottom: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.main-slider__controls-btn {
+    display: inline-flex;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 17px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.main-slider__controls-btn:last-child {
+    margin-right: 0;
+}
+
+.main-slider__controls-btn--current::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--gray-250);
+    border-radius: 50%;
+    margin: auto;
+    background-color: var(--white);
+}
+
 
 /*-------------------------------services-------------------------------------------*/
 
