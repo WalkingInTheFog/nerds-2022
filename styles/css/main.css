@@ -886,6 +886,38 @@ img {
     border: none;
 }
 
+.range-fiter {
+    position: relative;
+    height: 80px;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 14px;
+
+    background-color: var(--gray);
+}
+
+.range-line {
+    position: relative;
+    top: 50%;
+    height: 2px;
+    background-color: var(--gray-350);
+}
+
+.range-pin-min,
+.range-pin-max {
+    position: absolute;
+    width: 20px;
+
+    height: 20px;
+    border-radius: 50%;
+
+    border: 8px solid var(--white);
+    background-color: var(--gray-400);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+}
+
 
 
 .range-field {
