@@ -498,7 +498,7 @@ img {
     text-transform: uppercase;
 }
 
-.about-us__list {}
+
 
 .about-us__list li {
     position: relative;
@@ -659,6 +659,11 @@ img {
     color: var(--gray-600);
 }
 
+.contacts__btn {
+
+    padding-left: 44px;
+    padding-right: 44px;
+}
 
 .main-footer__bottom-line {
     display: grid;
