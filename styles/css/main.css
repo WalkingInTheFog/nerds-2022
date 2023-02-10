@@ -268,10 +268,27 @@ img {
 }
 
 .user-basket-link {
+    position: relative;
     display: block;
     margin-top: auto;
     padding-left: 45px;
     padding-bottom: 20px;
+}
+
+.user-basket-link::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url(../../images/cart-icon.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+
 }
 
 .main-nav-list__link,
