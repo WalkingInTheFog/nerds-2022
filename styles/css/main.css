@@ -53,6 +53,9 @@ img {
 
 /*-----------------buttons---------------------------*/
 .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 3px;
 
     font-family: 'Roboto', 'Arial', sans-serif;
     font-style: normal;
@@ -280,7 +283,6 @@ img {
     position: absolute;
     top: 9px;
     left: 0;
-
 
     width: 15px;
     height: 15px;
