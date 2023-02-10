@@ -68,6 +68,8 @@ img {
     border: none;
     color: var(--white);
     background-color: var(--red);
+
+    cursor: pointer;
 }
 
 
@@ -750,6 +752,30 @@ img {
     padding-bottom: 85px;
 
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.pop-up__btn {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../../images/close-cross.svg);
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: 50% 50%;
+
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.pop-up__btn:hover,
+.pop-up__btn:focus {
+    opacity: 1;
+}
+
+.pop-up__btn:active {
+    opacity: 0.1;
 }
 
 
