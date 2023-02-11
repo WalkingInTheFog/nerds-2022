@@ -1257,13 +1257,16 @@ img {
 }
 
 .pagination-list__link {
+    display: block;
+    padding: 15px 20px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.125;
     color: var(--black);
     text-decoration: none;
     text-align: center;
-
+    border-radius: 3px;
     background-color: var(--gray);
 }
 
@@ -1284,6 +1287,13 @@ img {
 }
 
 .pagination-list__link--active {
+    padding: 12px 17px;
     background-color: var(--white);
     border: 3px solid var(---gray-370);
+
+}
+
+.pagination-list__link--next {
+    padding-left: 77px;
+    padding-right: 77px;
 }
