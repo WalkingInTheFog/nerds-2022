@@ -1014,8 +1014,9 @@ img {
     background-image: url(../../images/checkbox-on.svg);
 }
 
-filter-label__check-box:hover::before,
-filter-label__check-box:active::before .filter-label--radio:hover::after,
+.filter-label__check-box:hover::before,
+.filter-label__check-box:active::before,
+.filter-label--radio:hover::after,
 .filter-label--radio:hover::before,
 .filter-label--radio:active::after,
 .filter-label--radio:active::before {
