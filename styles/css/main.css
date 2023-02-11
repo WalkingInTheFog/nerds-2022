@@ -986,25 +986,10 @@ img {
     opacity: 0.4;
 }
 
-.filter-label--radio::after {
-    display: none;
-
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: 6px;
-
-    width: 9px;
-    height: 9px;
-
+.type-filter-radio:checked + .filter-label--radio:before {
     background-color: var(--gray-650);
-    border-radius: 50%;
-    opacity: 0.4;
-}
-
-
-.type-filter-radio:checked + .filter-label--radio:after {
-    display: block;
+    padding: 4px;
+    background-clip: content-box;
 }
 
 .filter-label--radio:hover::after,
