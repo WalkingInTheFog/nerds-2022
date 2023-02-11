@@ -1033,6 +1033,10 @@ img {
     opacity: 0.1;
 }
 
+.catalog-filters__btn {
+    width: 100%;
+}
+
 /*----------------sort results---------------------*/
 .catalog__sort {
     grid-column: 1/-1;
