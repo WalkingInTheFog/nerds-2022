@@ -992,7 +992,30 @@ img {
     background-clip: content-box;
 }
 
-.filter-label--radio:hover::after,
+
+.filter-label__check-box::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 0;
+    top: -2px;
+
+    background-image: url(../../images/checkbox-off.svg);
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.4;
+}
+
+
+.features-filter-input:checked + .filter-label__check-box::before {
+
+    background-image: url(../../images/checkbox-on.svg);
+}
+
+filter-label__check-box:hover::before,
+filter-label__check-box:active::before .filter-label--radio:hover::after,
 .filter-label--radio:hover::before,
 .filter-label--radio:active::after,
 .filter-label--radio:active::before {
@@ -1002,6 +1025,11 @@ img {
 .type-filter-radio:disabled + .filter-label,
 .features-filter-input:disabled + .filter-label {
     opacity: 0.3;
+}
+
+.type-filter-radio:disabled + .filter-label::before,
+.features-filter-input:disabled + .filter-label::before {
+    opacity: 0.1;
 }
 
 /*----------------sort results---------------------*/
