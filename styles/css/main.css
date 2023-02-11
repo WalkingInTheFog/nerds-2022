@@ -1128,6 +1128,7 @@ img {
 
     position: relative;
     padding-top: 40px;
+    overflow: hidden;
 
 }
 
@@ -1161,10 +1162,11 @@ img {
 /*--------------------product cart---------------------------------*/
 
 .catalog-list__pop-up {
-    display: none;
+
     position: absolute;
     left: 0;
-    bottom: 0;
+    transform: translateY(100%);
+
     padding-top: 26px;
     padding-left: 70px;
     padding-right: 70px;
@@ -1173,10 +1175,16 @@ img {
     text-align: center;
     background-color: var(--gray);
 
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
+
+
 .catalog-list__item:hover .catalog-list__pop-up {
-    display: block;
+    transform: translateY(-100%);
 }
 
 .catalog-list__link {
