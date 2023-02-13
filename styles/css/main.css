@@ -787,14 +787,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: -9px;
+    padding-left: 1px;
+    padding-top: 1px;
 }
 
 .social-list__link {
     display: flex;
-    width: 81px;
-    height: 81px;
-    margin-right: 9px;
+    width: 79px;
+    height: 79px;
+    margin-right: 11px;
     border-radius: 50%;
     text-decoration: none;
     background-color: var(--gray-300);
@@ -825,6 +826,7 @@ img {
 
 .lets-friends {
     margin: 0;
+    padding-top: 7px;
 }
 
 .lets-friends b {
