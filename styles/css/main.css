@@ -724,12 +724,13 @@ img {
 
 .contacts {
     padding: 50px;
+    padding-bottom: 48px;
     background-color: var(--white);
 }
 
 .contacts__title {
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 
     font-weight: 700;
     font-size: 18px;
@@ -742,7 +743,7 @@ img {
 
 .contacts__text {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     font-weight: 400;
     line-height: 1.125;
