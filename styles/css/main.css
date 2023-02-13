@@ -219,10 +219,8 @@ img {
 
 .main-nav {
 
-    display: grid;
-    grid-template-columns: 200px 1fr 160px;
-    column-gap: 40px;
-    padding-top: 50px;
+    display: flex;
+    padding-top: 48px;
 
 }
 
@@ -230,6 +228,9 @@ img {
     display: block;
     width: 160px;
     height: 66px;
+
+    margin-right: 202px;
+
 }
 
 .main-logo:hover,
@@ -245,9 +246,13 @@ img {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: auto;
+    flex-grow: 1;
+
+    margin-right: -22.5px;
+    margin-left: -22.5px;
+    padding-top: 27px;
 }
 
 .main-nav-list__link {
@@ -257,6 +262,8 @@ img {
     margin-right: 22.5px;
     padding-bottom: 20px;
 }
+
+
 
 .main-nav-list__link--current::after {
     content: "";
@@ -271,20 +278,22 @@ img {
 
 .user-basket {
     display: flex;
+    margin-left: 50px;
+    padding-top: 27px;
 }
 
 .user-basket-link {
     position: relative;
     display: block;
-    margin-top: auto;
-    padding-left: 45px;
+
+    padding-left: 40px;
     padding-bottom: 20px;
 }
 
 .user-basket-link::after {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 7px;
     left: 0;
 
     width: 15px;
@@ -303,7 +312,7 @@ img {
     font-size: 16px;
     line-height: 1.875;
     text-decoration: none;
-
+    text-transform: uppercase;
     color: var(--black);
 
 }
