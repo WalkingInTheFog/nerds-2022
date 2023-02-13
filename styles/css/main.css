@@ -365,9 +365,17 @@ img {
 }
 
 .slider-list__item {
+    display: none;
     min-height: 431px;
     padding-top: 66px;
 }
+
+.slider-list__item--current {
+    display: block;
+}
+
+
+
 
 .slider-list__lead {
     margin: 0;
@@ -396,6 +404,14 @@ img {
 
     padding-left: 54px;
     padding-right: 54px;
+}
+
+.slider-list__item--two .slider-list__lead {
+    margin-bottom: 37px;
+}
+
+.slider-list__item--two .slider-list__text {
+    margin-bottom: 27px;
 }
 
 
