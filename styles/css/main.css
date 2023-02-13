@@ -515,9 +515,9 @@ img {
 
 .about-company {
     display: grid;
-    grid-template-columns: 650px 375px;
-    column-gap: 135px;
-    padding-bottom: 74px;
+    grid-template-columns: 650px 360px;
+    column-gap: 150px;
+    padding-bottom: 72px;
     border-bottom: 1px solid var(--gray);
 }
 
@@ -575,8 +575,7 @@ img {
 }
 
 .stats__img {
-
-    margin-bottom: 37px;
+    margin-bottom: 31px;
 }
 
 .stats-list {
@@ -588,7 +587,7 @@ img {
 }
 
 .stats-list__item {
-    margin-right: 22px;
+    margin-right: 24px;
 }
 
 .stats-list__item:last-child {
@@ -598,18 +597,33 @@ img {
 
 .stats__lead {
     margin-top: 0;
-    margin-bottom: 31px;
-    text-align: left;
+    margin-bottom: 30px;
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--black);
 }
 
 .stats__termin {
+    position: relative;
+    display: block;
+
     font-weight: 700;
     font-size: 45px;
     line-height: 1.422;
     color: var(--black);
+}
+
+.stats .stats__termin {
+    margin-bottom: 10px;
+}
+
+.stats__termin-percent {
+    position: absolute;
+    top: 4px;
+
+    font-size: 26px;
+    line-height: 1.5;
 }
 
 .stats__desc {
