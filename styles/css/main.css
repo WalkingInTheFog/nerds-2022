@@ -876,7 +876,11 @@ img {
     border-radius: 3px;
 
     background-color: var(--white);
+    outline: none;
 }
+
+
+
 
 .pop-up__form-item--text-area {
     margin-bottom: 47px;
@@ -891,6 +895,22 @@ img {
     border-radius: 3px;
 
     background-color: var(--white);
+    outline: none;
+}
+
+.pop-up__form-item input:hover,
+.pop-up__form-item textarea:hover {
+    border-color: var(--gray-450);
+}
+
+.pop-up__form-item textarea:focus,
+.pop-up__form-item input:focus {
+    border-color: var(--black);
+}
+
+.pop-up__form-item input:invalid {
+    border-color: var(--red-500);
+    color: var(--red-500);
 }
 
 
