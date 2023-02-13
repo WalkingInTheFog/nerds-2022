@@ -534,14 +534,14 @@ img {
 
 .about-us__text {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     color: var(--black-200);
 }
 
 .about-us h3 {
     margin-top: 0;
     margin-bottom: 23px;
-
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -550,7 +550,7 @@ img {
 
 .about-us__list li {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     padding-left: 37px;
 }
 
@@ -559,7 +559,7 @@ img {
     position: absolute;
     left: 0;
     top: 50%;
-
+    transform: translateY(-50%);
     width: 25px;
     height: 2px;
 
