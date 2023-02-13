@@ -414,6 +414,14 @@ img {
     margin-bottom: 27px;
 }
 
+.slider-list__item--three .slider-list__lead {
+    margin-bottom: 39px;
+}
+
+.slider-list__item--three .slider-list__text {
+    margin-bottom: 25px;
+}
+
 
 .main-slider__controls {
     display: flex;
