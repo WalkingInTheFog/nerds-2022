@@ -634,19 +634,16 @@ img {
 /*----------------------clients----------------------------------------*/
 
 .clients {
-    margin-bottom: 79px;
+    margin-bottom: 80px;
     border-bottom: 1px solid var(--gray);
 }
 
 .clients-list {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 46px;
+    padding-bottom: 38px;
     min-height: 180px;
     display: flex;
     flex-wrap: wrap;
-
-
-
 }
 
 .clients-list__item {
@@ -691,8 +688,9 @@ img {
 }
 
 .clients__link--academy {
+    padding-top: 1px;
     padding-left: 32px;
-    padding-right: 48px;
+    padding-right: 50px;
 }
 
 .clients__link--borodinsky {
@@ -701,12 +699,12 @@ img {
 }
 
 .clients__link--pink {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 58px;
+    padding-right: 58px;
 }
 
 .clients__link--mishka {
-
+    padding-top: 5px;
     padding-left: 63px;
     padding-right: 43px;
 }
