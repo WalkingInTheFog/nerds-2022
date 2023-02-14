@@ -983,9 +983,10 @@ img {
 }
 
 .catalog-filters fieldset {
+    display: block;
     padding: 0;
     margin: 0;
-    margin-bottom: 54px;
+
 }
 
 
@@ -999,6 +1000,10 @@ img {
     text-transform: uppercase;
 
     color: var(--black);
+}
+
+.catalog-filters .range-fieldset {
+    margin-bottom: 54px;
 }
 
 .filter-title--range {
@@ -1081,10 +1086,17 @@ img {
     color: var(--black-200);
 }
 
+.catalog-filters .grid-fieldset {
+    margin-bottom: 47px;
+}
+
+.catalog-filters .peculiarities-fieldset {
+    margin-bottom: 50px;
+}
 
 .catalog-filters__item {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .catalog-filters__item:last-child {
