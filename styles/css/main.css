@@ -1267,7 +1267,7 @@ img {
     column-gap: 40px;
     row-gap: 32px;
 
-    margin-bottom: 55px;
+    margin-bottom: 56px;
 
 }
 
@@ -1410,7 +1410,7 @@ img {
 
 .pagination-list__link {
     display: block;
-    padding: 15px 20px;
+    padding: 16px 21px;
 
     font-weight: 500;
     font-size: 16px;
@@ -1439,13 +1439,14 @@ img {
 }
 
 .pagination-list__link--active {
-    padding: 12px 17px;
+    padding: 13px 18px;
     background-color: var(--white);
     border: 3px solid var(---gray-370);
 
 }
 
 .pagination-list__link--next {
+    text-transform: uppercase;
     padding-left: 77px;
     padding-right: 77px;
 }
