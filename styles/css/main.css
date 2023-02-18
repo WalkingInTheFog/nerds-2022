@@ -712,12 +712,25 @@ img {
 /*------------------------footer-------------------------------------------*/
 
 .main-footer__top-line {
-    padding-top: 54px;
+    position: relative;
     min-height: 416px;
     background-color: var(--green-400);
 }
 
+.interactive-map {
+    width: 1440px;
+    height: 416px;
+    margin: 0 auto;
+}
+
 .main-footer__inner {
+    position: absolute;
+    left: calc((100% - 1440px) / 2);
+    top: 0;
+
+    width: 1440px;
+    padding-left: 140px;
+    padding-top: 54px;
     display: grid;
     grid-template-columns: 319px 1fr;
 }
