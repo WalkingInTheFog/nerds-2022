@@ -597,6 +597,7 @@ img {
 
 .stats-list__item {
     margin-right: 24px;
+    max-width: 108px;
 }
 
 .stats-list__item:last-child {
@@ -621,10 +622,14 @@ img {
     font-size: 45px;
     line-height: 1.422;
     color: var(--black);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .stats .stats__termin {
     margin-bottom: 10px;
+
 }
 
 .stats__termin-percent {
@@ -638,6 +643,7 @@ img {
 .stats__desc {
     font-size: 16px;
     line-height: 1.125;
+    word-break: break-word;
 }
 
 /*----------------------clients----------------------------------------*/
