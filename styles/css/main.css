@@ -1010,6 +1010,8 @@ img {
 .catalog-filters {
     grid-column: 1/2;
     padding-top: 1px;
+
+    max-width: 260px;
 }
 
 .catalog-filters fieldset {
@@ -1051,10 +1053,15 @@ img {
 }
 
 .range-label {
+    max-width: 116px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.375;
     text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .catalog-filters fieldset,
@@ -1063,7 +1070,7 @@ img {
 }
 
 .range-fiter {
-    position: relative;
+
     height: 80px;
     padding-left: 17px;
     padding-right: 23px;
@@ -1212,6 +1219,10 @@ img {
 
 .catalog-filters__btn {
     width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /*----------------sort results---------------------*/
@@ -1411,9 +1422,13 @@ img {
 }
 
 .catalog-list__cart-price {
+    max-width: 200px;
     margin: 0;
     padding-left: 72px;
     padding-right: 72px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
