@@ -751,6 +751,8 @@ img {
 }
 
 .contacts {
+    max-height: 308px;
+    overflow-y: scroll;
     padding: 50px;
     padding-bottom: 48px;
     background-color: var(--white);
