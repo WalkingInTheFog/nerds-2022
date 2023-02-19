@@ -172,7 +172,7 @@ img {
 
 .page {
     height: 100%;
-
+    hyphens: auto;
 }
 
 .page-body {
@@ -382,6 +382,8 @@ img {
 .slider-list__lead {
     margin: 0;
     margin-bottom: 26px;
+    max-width: 520px;
+    overflow-wrap: break-word;
 }
 
 .slider-list__lead b {
@@ -394,6 +396,7 @@ img {
 
 
 .slider-list__text {
+    max-width: 520px;
     margin: 0;
     margin-bottom: 37px;
 
@@ -405,9 +408,13 @@ img {
 .slider-list__more-btn {
     padding-top: 17px;
     padding-bottom: 15px;
-    padding-left: 55px;
+    padding-left: 54px;
     padding-right: 54px;
 
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .slider-list__item--two .slider-list__lead {
