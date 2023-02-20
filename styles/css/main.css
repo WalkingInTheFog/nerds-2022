@@ -65,6 +65,7 @@ img {
     line-height: 1.125;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     border: none;
     color: var(--white);
     background-color: var(--red);
@@ -352,8 +353,12 @@ img {
     font-size: 55px;
     line-height: 1.2;
     text-align: center;
-
+    overflow-wrap: break-word;
     color: var(--black);
+}
+
+.lead-title span {
+    display: block;
 }
 
 /*----------------------------------slider--------------------------------------------------*/
@@ -408,13 +413,12 @@ img {
 .slider-list__more-btn {
     padding-top: 17px;
     padding-bottom: 15px;
-    padding-left: 54px;
-    padding-right: 54px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     max-width: 240px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    min-width: 240px;
+    overflow-wrap: break-word;
 }
 
 .slider-list__item--two .slider-list__lead {
@@ -1221,9 +1225,7 @@ img {
 .catalog-filters__btn {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    overflow-wrap: break-word;
 }
 
 /*----------------sort results---------------------*/
@@ -1423,12 +1425,12 @@ img {
 
 .catalog-list__cart-price {
     max-width: 200px;
+    min-width: 200px;
     margin: 0;
-    padding-left: 72px;
-    padding-right: 72px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-wrap: break-word;
 }
 
 
