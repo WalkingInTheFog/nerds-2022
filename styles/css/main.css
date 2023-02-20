@@ -753,6 +753,7 @@ img {
     padding: 50px;
     padding-bottom: 48px;
     background-color: var(--white);
+    overflow: hidden;
 }
 
 .contacts__title {
