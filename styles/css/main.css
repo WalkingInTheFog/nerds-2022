@@ -19,7 +19,7 @@
     --gray-450: #B4B9BB;
     --gray-470: #DFDFDF;
     --gray-490: #D5D5D5;
-    ---gray-370: #DBDBDB;
+    --gray-370: #DBDBDB;
 
     --black-200: #283136;
     --black-300: #231F20;
@@ -1229,9 +1229,7 @@ img {
 /*----------------sort results---------------------*/
 .catalog__sort {
     grid-column: 1/-1;
-
     display: flex;
-
     margin-bottom: 47px;
     padding-top: 1px;
 }
@@ -1489,7 +1487,7 @@ img {
 .pagination-list__link--active {
     padding: 13px 18px;
     background-color: var(--white);
-    border: 3px solid var(---gray-370);
+    border: 3px solid var(--gray-370);
 
 }
 
