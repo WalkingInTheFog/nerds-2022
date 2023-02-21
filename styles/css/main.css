@@ -1138,8 +1138,6 @@ img {
     color: var(--black-200);
 }
 
-
-
 .catalog-filters__item {
     margin: 0;
     margin-bottom: 20px;
@@ -1159,6 +1157,7 @@ img {
     line-height: 1.25;
 
     cursor: pointer;
+    user-select: none;
 }
 
 .filter-label--radio::before {
@@ -1179,8 +1178,12 @@ img {
     background-color: var(--gray-650);
     padding: 4px;
     background-clip: content-box;
+    opacity: 1;
 }
 
+.filter-label--radio:hover::before {
+    opacity: 1;
+}
 
 .filter-label__check-box::before {
     content: "";
@@ -1197,18 +1200,16 @@ img {
     opacity: 0.4;
 }
 
-
 .features-filter-input:checked + .filter-label__check-box::before {
 
     background-image: url(../../images/checkbox-on.svg);
 }
 
-.filter-label__check-box:hover::before,
-.filter-label__check-box:active::before,
-.filter-label--radio:hover::after,
-.filter-label--radio:hover::before,
-.filter-label--radio:active::after,
-.filter-label--radio:active::before {
+.filter-label__check-box:hover::before {
+    opacity: 1;
+}
+
+.features-filter-input:focus + .filter-label__check-box::before {
     opacity: 1;
 }
 
@@ -1248,8 +1249,6 @@ img {
     color: var(--black);
 }
 
-
-
 .sort-list {
     max-width: 360px;
     display: flex;
@@ -1268,7 +1267,6 @@ img {
     margin-right: 18px;
     margin-left: 49px;
 }
-
 
 .sort-list__item__last,
 .sort-list__item--direcion:last-child {
