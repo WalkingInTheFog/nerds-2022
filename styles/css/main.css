@@ -1360,8 +1360,9 @@ img {
 
     position: absolute;
     left: 0;
-    transform: translateY(100%);
+    bottom: 0;
     width: 100%;
+    transform: translateY(100%);
 
     padding-top: 28px;
     padding-left: 65px;
@@ -1377,8 +1378,10 @@ img {
     transition-delay: 0s;
 }
 
-.catalog-list__item:hover .catalog-list__pop-up {
-    transform: translateY(-100%);
+.catalog-list__item:hover .catalog-list__pop-up,
+.catalog-list__item:focus .catalog-list__pop-up,
+.catalog-list__item:focus-within .catalog-list__pop-up {
+    transform: translateY(0);
 }
 
 .catalog-list__link {
