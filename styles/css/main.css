@@ -1174,15 +1174,14 @@ img {
     opacity: 0.4;
 }
 
+.filter-label--radio:hover::before {
+    opacity: 1;
+}
+
 .type-filter-radio:checked + .filter-label--radio:before {
     background-color: var(--gray-650);
     padding: 4px;
     background-clip: content-box;
-    opacity: 1;
-}
-
-.filter-label--radio:hover::before {
-    opacity: 1;
 }
 
 .filter-label__check-box::before {
