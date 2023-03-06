@@ -884,6 +884,9 @@ img {
 /*---------------------------pop-up------------------------------------------------*/
 
 .pop-up {
+    display: none;
+
+
     margin: 0 auto;
     width: 960px;
     max-width: 960px;
@@ -894,6 +897,11 @@ img {
 
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+.pop-up--show {
+    display: block;
+}
+
 
 .pop-up__btn {
     display: block;
