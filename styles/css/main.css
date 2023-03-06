@@ -1509,3 +1509,27 @@ img {
     padding-left: 77px;
     padding-right: 77px;
 }
+
+/******************************************Animation******************************************/
+@keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, -2000px, 0);
+        transform: translate3d(-50%, -2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+
+.animate__fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+
+}
