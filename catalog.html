@@ -486,17 +486,13 @@
 
   </footer>
 
-  <div class="pop-up display-none">
+  <div class="pop-up">
 
-    <div class="pop-up__title-wrapper">
+    <h2 class="pop-up__title">Напишите нам</h2>
 
-      <h2 class="pop-up__title">Напишите нам</h2>
+    <button class="pop-up__btn-close" type="button" aria-label="закрыть окно">
 
-      <button class="pop-up__btn" type="button" aria-label="закрыть окно">
-
-      </button>
-
-    </div>
+    </button>
 
     <form class="pop-up__form" action="https://echo.htmlacademy.ru/" method="post" name="user-msg-form">
 
@@ -504,7 +500,7 @@
 
         <label for="user-msg-form__name">Ваше имя:</label>
 
-        <input type="text" name="user-msg-form__name" id="user-msg-form__name" placeholder="Имя Фамилия">
+        <input type="text" name="user-msg-form__name" id="user-msg-form__name" placeholder="Имя Фамилия" required>
 
       </p>
 
@@ -512,7 +508,8 @@
 
         <label for="user-msg-form__mail">Ваш email:</label>
 
-        <input type="email" name="user-msg-form__mail" id="user-msg-form__mail" placeholder="email@example.com">
+        <input type="email" name="user-msg-form__mail" id="user-msg-form__mail" placeholder="email@example.com"
+          required>
 
       </p>
 
@@ -520,12 +517,12 @@
 
         <label for="user-msg-form__msg">Текст письма:</label>
 
-        <textarea name="user-msg-form__msg" id="user-msg-form__msg" cols="30" rows="10"
-          placeholder="В свободной форме"></textarea>
+        <textarea name="user-msg-form__msg" id="user-msg-form__msg" cols="30" rows="10" placeholder="В свободной форме"
+          required></textarea>
 
       </p>
 
-      <button class="btn" type="submit">
+      <button class="btn pop-up__btn-sent" type="submit">
         <span>Отправить</span>
       </button>
 
