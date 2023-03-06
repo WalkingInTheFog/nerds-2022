@@ -925,12 +925,12 @@ img {
     cursor: pointer;
 }
 
-.pop-up__btn:hover,
-.pop-up__btn:focus {
+.pop-up__btn-close:hover,
+.pop-up__btn-close:focus {
     opacity: 1;
 }
 
-.pop-up__btn:active {
+.pop-up__btn-close:active {
     opacity: 0.1;
 }
 
