@@ -414,7 +414,7 @@
 
   </footer>
 
-  <div class="pop-up display-none">
+  <div class="pop-up pop-up--show">
 
     <div class="pop-up__title-wrapper">
 
@@ -432,7 +432,7 @@
 
         <label for="user-msg-form__name">Ваше имя:</label>
 
-        <input type="text" name="user-msg-form__name" id="user-msg-form__name" placeholder="Имя Фамилия">
+        <input type="text" name="user-msg-form__name" id="user-msg-form__name" placeholder="Имя Фамилия" required>
 
       </p>
 
@@ -440,7 +440,8 @@
 
         <label for="user-msg-form__mail">Ваш email:</label>
 
-        <input type="email" name="user-msg-form__mail" id="user-msg-form__mail" placeholder="email@example.com">
+        <input type="email" name="user-msg-form__mail" id="user-msg-form__mail" placeholder="email@example.com"
+          required>
 
       </p>
 
@@ -448,8 +449,8 @@
 
         <label for="user-msg-form__msg">Текст письма:</label>
 
-        <textarea name="user-msg-form__msg" id="user-msg-form__msg" cols="30" rows="10"
-          placeholder="В свободной форме"></textarea>
+        <textarea name="user-msg-form__msg" id="user-msg-form__msg" cols="30" rows="10" placeholder="В свободной форме"
+          required></textarea>
 
       </p>
 
