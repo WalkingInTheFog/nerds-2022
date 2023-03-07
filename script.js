@@ -1,5 +1,27 @@
 /*----------------------------------function-------------------------------------------------------- */
 
+let fillValueField = function (form, name, email) {
+
+    let fName = localStorage.getItem(name);
+    let mail = localStorage.getItem(email);
+
+    if (fName) {
+
+        form.elements.name.value = fName;
+
+    }
+
+    if (mail) {
+
+        form.elements.mail.value = mail;
+
+    }
+
+    form.elements.msg.focus();
+
+};
+
+
 let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animateClass) {
 
     openBtn.addEventListener('click', function (evt) {
@@ -9,6 +31,8 @@ let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animate
         modalBlock.classList.toggle(toogleClass);
 
         modalBlock.classList.add(animateClass);
+
+        fillValueField(form, 'userName', 'userMail');
 
 
     });
@@ -58,7 +82,7 @@ if (openLink || modalWindow || closeBtn) {
 
 form.addEventListener('submit', function (evt) {
 
-    evt.preventDefault();
+
 
     if (form.elements.name.value && form.elements.mail.value) {
 
