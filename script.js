@@ -82,8 +82,6 @@ if (openLink || modalWindow || closeBtn) {
 
 form.addEventListener('submit', function (evt) {
 
-
-
     if (form.elements.name.value && form.elements.mail.value) {
 
         localStorage.setItem('userName', form.elements.name.value);
