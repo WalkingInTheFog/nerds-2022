@@ -49,7 +49,7 @@ let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animate
 
     window.addEventListener('keydown', function (evt) {
 
-        if (evt.key === 'Escape') {
+        if (evt.key === 'Escape' || evt.key === 'Esc') {
 
             if (modalBlock.classList.contains(toogleClass)) {
 
