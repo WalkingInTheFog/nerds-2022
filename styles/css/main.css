@@ -734,7 +734,7 @@ img {
 }
 
 .interactive-map {
-    width: 1440px;
+    width: 100%;
     height: 416px;
     margin: 0 auto;
 }
