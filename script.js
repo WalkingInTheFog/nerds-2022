@@ -8,16 +8,16 @@ let fillValueField = function (form, name, email) {
     if (fName) {
 
         form.elements.name.value = fName;
-
+        form.elements.msg.focus();
     }
 
     if (mail) {
 
         form.elements.mail.value = mail;
-
+        form.elements.msg.focus();
     }
 
-    form.elements.msg.focus();
+
 
 };
 
@@ -69,23 +69,36 @@ let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animate
 /*---------------------------variables------------------------------------------------------------ */
 
 let openLink = document.querySelector('.contacts__btn');
+
+
 let modalWindow = document.querySelector('.pop-up');
-let closeBtn = modalWindow.querySelector('.pop-up__btn-close');
+
+if (modalWindow) {
+    var closeBtn = modalWindow.querySelector('.pop-up__btn-close');
+    var form = modalWindow.querySelector('.pop-up__form');
+}
+
 let openClass = 'pop-up--show';
 let AnimateClass = 'animate__backInUp';
 let animateClosePopup = 'animate__backOutDown';
-let form = modalWindow.querySelector('.pop-up__form');
+
 
 let slider = document.querySelector('.slider-wrapper');
-let controlBtnsSlider = slider.querySelectorAll('.main-slider__controls-btn');
-let slides = slider.querySelectorAll('.slider-list__item');
+
+if (slider) {
+
+    var controlBtnsSlider = slider.querySelectorAll('.main-slider__controls-btn');
+    var slides = slider.querySelectorAll('.slider-list__item');
+
+}
+
 let slideShowClass = 'slider-list__item--current';
 let btnCurrentClass = 'main-slider__controls-btn--current';
 /*------------------------------------Code-------------------------------------------------------- */
 
 /*----если переменные нашлись, то на кнопки функцией вешаются события клика, функция добавляет класс открытия и анимации---- */
 
-if (openLink || modalWindow || closeBtn) {
+if (openLink && modalWindow && closeBtn) {
 
     modalHandler(openLink, modalWindow, closeBtn, openClass, AnimateClass, animateClosePopup);
 }
