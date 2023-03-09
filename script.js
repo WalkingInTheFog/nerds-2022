@@ -21,13 +21,15 @@ let fillValueField = function (form, name, email) {
 
 };
 
-let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animateClass) {
+let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animateClass, animateClose) {
 
     openBtn.addEventListener('click', function (evt) {
 
         evt.preventDefault();
 
         modalBlock.classList.toggle(toogleClass);
+
+        modalBlock.classList.remove(animateClose);
 
         modalBlock.classList.add(animateClass);
 
@@ -42,7 +44,9 @@ let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animate
 
         modalBlock.classList.toggle(toogleClass);
 
-        modalBlock.classList.add(animateClass);
+        modalBlock.classList.remove(animateClass);
+
+        modalBlock.classList.add(animateClose);
 
     });
 
@@ -54,6 +58,7 @@ let modalHandler = function (openBtn, modalBlock, closeBtn, toogleClass, animate
 
                 modalBlock.classList.remove(toogleClass);
                 modalBlock.classList.remove(animateClass);
+                modalBlock.classList.add(animateClose);
             }
         }
 
@@ -67,7 +72,8 @@ let openLink = document.querySelector('.contacts__btn');
 let modalWindow = document.querySelector('.pop-up');
 let closeBtn = modalWindow.querySelector('.pop-up__btn-close');
 let openClass = 'pop-up--show';
-let AnimateClass = 'animate__fadeInDownBig';
+let AnimateClass = 'animate__backInUp';
+let animateClosePopup = 'animate__backOutDown';
 let form = modalWindow.querySelector('.pop-up__form');
 
 let slider = document.querySelector('.slider-wrapper');
@@ -81,7 +87,7 @@ let btnCurrentClass = 'main-slider__controls-btn--current';
 
 if (openLink || modalWindow || closeBtn) {
 
-    modalHandler(openLink, modalWindow, closeBtn, openClass, AnimateClass);
+    modalHandler(openLink, modalWindow, closeBtn, openClass, AnimateClass, animateClosePopup);
 }
 
 form.addEventListener('submit', function (evt) {
